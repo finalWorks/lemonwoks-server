@@ -1,0 +1,52 @@
+// Terminal => Configure Default Build Task => tsc: build -tsconfig.json
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558 
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "typescript",
+            "tsconfig": "tsconfig.json",
+            "problemMatcher": [
+                "$tsc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
+
+
+// 多任务示例
+// {
+//     // See https://go.microsoft.com/fwlink/?LinkId=733558
+//     // for the documentation about the tasks.json format
+//     "version": "2.0.0",
+//     "tasks": [
+//         {
+//             "type": "npm",
+//             "script": "lint",
+//             "problemMatcher": [
+//                 "$eslint-stylish"
+//             ],
+//             "presentation": {
+//                 "reveal": "never"
+//             },
+//         },
+//         {
+//             "taskName": "Run tests",
+//             "type": "shell",
+//             "command": "./scripts/test.sh",
+//             "windows": {
+//                 "command": ".\\scripts\\test.cmd"
+//             },
+//             "group": "test",
+//             "presentation": {
+//                 "reveal": "always",
+//                 "panel": "new"
+//             }
+//         }
+//     ]
+// }

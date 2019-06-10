@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "outDir": "build",
+        "lib": [
+            "es6"
+        ]
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
+
+// {
+//     "compilerOptions": { 编译器的配置
+//         "target": "es5", 目标是将其编译成一个es5规范的js脚本
+//         "module": "commonjs",    用的模块规范是commonjs
+//         "emitDecoratorMetadata": true,   跟装饰器相关的，在编译时要保留我的装饰器的元数据
+//         "experimentalDecorators": true,   跟装饰器相关的，在编译时要保留我的装饰器的元数据
+//         "outDir": "build",   编译完之后，js放到build目录中
+//         "lib": ["es6"]   开发时需要使用的es6的语法
+//     },
+//     "exclude": [
+//         "node_modules"   编译时需要排除的文件
+//     ]
+// }
